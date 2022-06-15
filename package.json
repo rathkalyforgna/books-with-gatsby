@@ -1,0 +1,29 @@
+{
+  "name": "books-with-gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "books-with-gatsby",
+  "author": "Rathkalyforgna Chhin",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^4.16.0",
+    "gatsby-plugin-mdx": "^3.16.1",
+    "gatsby-plugin-react-helmet": "^5.16.0",
+    "gatsby-plugin-sitemap": "^5.16.0",
+    "gatsby-source-filesystem": "^4.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0"
+  }
+}
