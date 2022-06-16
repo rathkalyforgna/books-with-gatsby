@@ -1,0 +1,29 @@
+---
+date: 2022-06-15
+title: First Post
+---
+
+import { Layout } from "../../components/layout";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+export const query = graphql`
+  query SmashburgerQuery {
+    file(name: { eq: "smashburger" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: DOMINANT_COLOR)
+      }
+    }
+  }
+`;
+
+export default Layout;
+
+<GatsbyImage
+  image={getImage(props.data.file)}
+  alt="a smashburger on a plate with french fries in the foreground"
+/>
+
+Content goes here!
+
+![a corgi lying down near a fountain with a blossoming cherry tree in the background](../../images/shiangling-RQbwjCKWxQw-unsplash.jpeg)
